@@ -31,20 +31,20 @@ except ModuleNotFoundError:
 class Config:
     #Telegram API Stuffs
     load_dotenv()  # load enviroment variables from .env file
-    ADMIN = os.environ.get("ADMINS", '')
+    ADMIN = os.environ.get("ADMINS", '1396584367')
     SUDO = [int(admin) for admin in (ADMIN).split()] # Exclusive for heroku vars configuration.
     ADMINS = [int(admin) for admin in (ADMIN).split()] #group admins will be appended to this list.
-    API_ID = int(os.environ.get("API_ID", ''))
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")     
-    SESSION = os.environ.get("SESSION_STRING", "")
+    API_ID = int(os.environ.get("API_ID", '16080598'))
+    API_HASH = os.environ.get("API_HASH", "c4c3748047d877b7aab584ffa301fbb5")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "2115287976:AAF0fPSxk5lb93yAWJ1wNyaSiX2RJ_mGeOw")     
+    SESSION = os.environ.get("SESSION_STRING", "BQAYdwIk0JfyAvgFkMdzavlmlrMBgNJAj-T_ag1AW8FR953r2Or_As77L33dgD4fvp1-knOWLPxFliybKK8Dnz772i3faQ62Nieg8xFr-Z57Cn4gxKkKlGuUnwzxa3qFwTL1gaQtHuCndewsSQmqhdw1u0RlRqztWYepI4-K4qcu0rVglv4c9lZ1bw3Mhen-rjjZVzpl-WSTw9QxzJpSi9t_9h_PZTu7p6DKaH3Co_DD3EnzvTpZg0ktp4a0yQtsbQeSU1uWtOaH5bSS42ZuYQFpERckh8rSWo-8LPcB8tabKYeTrvYu2qytt1DDIwqJTQ2oGcUZ5fT5J9g21HxnHehfUz4vrwA")
 
     #Stream Chat and Log Group
-    CHAT = int(os.environ.get("CHAT", ""))
+    CHAT = int(os.environ.get("CHAT", "-1001727265494"))
     LOG_GROUP=os.environ.get("LOG_GROUP", "")
 
     #Stream 
-    STREAM_URL=os.environ.get("STARTUP_STREAM", "https://www.youtube.com/watch?v=zcrUCvBD16k")
+    STREAM_URL=os.environ.get("STARTUP_STREAM", "http://radio.garden/listen/vasantharagamfm/gxssf1Io")
    
     #Database
     DATABASE_URI=os.environ.get("DATABASE_URI", None)
